@@ -1,0 +1,8 @@
+# Analisis-numerico
+%Programa para graficar funciones
+x=[-5:0.1:5];
+y1=x;
+y2=3*x;
+plot(x,y1,x,y2) %graficar dos funciones en un solo plano xy
+plot(x,y1,'red',x,y2,'green')%Cambiarle los colores a la grafica
+grid on %Para poner la cuadricula a la grafica
