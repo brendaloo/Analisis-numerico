@@ -1,0 +1,10 @@
+# Analisis-numerico
+%Programa suma de impares
+
+function y=impares(n)
+suma=0 %Inicializamos valores
+
+for i=1:2:n %las lineas de comandos no llevan punto y coma
+    suma= suma+i;%actualiza el valor de la variable
+end
+suma %imprime el ultimo valor
