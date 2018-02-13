@@ -6,4 +6,4 @@ producto=1 %Inicializamos valores
 for i=1:n %las lineas de comandos no llevan punto y coma
     producto= producto*i;%actualiza el valor de la variable
 end
-producto %imprime el ultimo valor
+producto % imprime el ultimo valor
