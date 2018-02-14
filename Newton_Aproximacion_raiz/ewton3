@@ -1,0 +1,16 @@
+%Programa método de Newton
+
+function x=newton3(f,f1,x0,n)
+% f es la funcion
+% f1 es la derivada de nuestra funcion
+% x0 es la aproximacion inicial
+% n es el numero de iteraciones
+x=x0;
+for i=1:n
+    Iter(i)=i;
+    Aprox(i)=x;
+    Resid(i)=abs(f(x));
+    x=x-(f(x)/f1(x)); %poner ; si solo quieres que se muestre la ultima aproximacion
+    
+end
+[Iter',Aprox',Resid']
