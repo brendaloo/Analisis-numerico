@@ -1,0 +1,55 @@
+%Programa método de Newton
+
+function x=newton2(f,f1,x0,n)
+% f es la funcion
+% f1 es la derivada de nuestra funcion
+% x0 es la aproximacion inicial
+% n es el numero de iteraciones
+x=x0;
+for i=1:n
+    Iter(i)=i;
+    Aprox(i)=x;
+    x=x-(f(x)/f1(x)); %poner ; si solo quieres que se muestre la ultima aproximacion
+    
+end
+[Iter',Aprox']
+
+
+
+
+EN NEL SCRIPT
+
+>> f=@(x) x.^2-14
+
+f = 
+
+    @(x)x.^2-14
+
+>> f1=@(x) 2*x
+
+f1 = 
+
+    @(x)2*x
+
+>> x=newton2(f,f1,6,13)
+
+ans =
+
+    1.0000    6.0000
+    2.0000    4.1667
+    3.0000    3.7633
+    4.0000    3.7417
+    5.0000    3.7417
+    6.0000    3.7417
+    7.0000    3.7417
+    8.0000    3.7417
+    9.0000    3.7417
+   10.0000    3.7417
+   11.0000    3.7417
+   12.0000    3.7417
+   13.0000    3.7417
+
+
+x =
+
+    3.7417
