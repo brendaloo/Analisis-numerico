@@ -1,0 +1,9 @@
+% Programa de uso while
+
+mult=1;
+i=1;
+while mult<15
+    mult
+    mult=mult*i;
+    i=1+i;
+end
