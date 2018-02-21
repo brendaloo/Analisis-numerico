@@ -1,0 +1,13 @@
+%Programa biseccion
+function x=biseccion1(f,a,b,n)
+c=f(a); d=f(b);
+for i=1:n
+    x=(a+b)/2;
+    disp([x f(x)])
+    if c*f(x)<0
+        b=x;
+    else 
+        a=x;
+    end
+end
+end
