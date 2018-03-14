@@ -1,0 +1,11 @@
+n=input('Introduce dimensión de A \n');
+
+for i=1:n
+    for j=1:n
+        disp(['El elemento(',num2str(i),',',num2str(j),')'])
+        A(i,j)=input('  ');
+    end
+end
+disp ('La matriz A es:')
+A
+
