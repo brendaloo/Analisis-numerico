@@ -1,0 +1,29 @@
+%Programa traza matriz  
+clear all;
+clc;
+n=input('Introduce dimensión de la matriz\n');
+
+for i=1:n
+    
+    for j=1:n
+        disp(['El elemento(',num2str(i),',',num2str(j),')'])
+        A(i,j)=input('  ');
+        
+    end
+end
+disp ('La matriz  es:')
+A
+
+
+
+trA=0;
+for i=1:n
+    for j=1:n
+if i==j
+    
+    trA= trA + A(i,j);
+end
+    end
+end
+disp ('La traza de la matriz es:')
+trA
